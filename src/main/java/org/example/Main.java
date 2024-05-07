@@ -7,7 +7,7 @@ public class Main {
 
 
     Main(int hour, int min, int sec) throws Exception {
-        if (hour > 24 && min > 60 && sec > 60) {
+        if (hour > 24 && min > 60 && sec > 60 && hour < 0 && min < 0 && sec < 0) {
             throw new Exception("Неправильно");
         } else {
             this.hour = hour;
